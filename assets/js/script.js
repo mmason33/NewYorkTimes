@@ -24,7 +24,7 @@ function api(e) {
 			var author = res.response.docs[i].byline !== null ? `<p>${res.response.docs[i].byline.original}</p>` : '';
 			var section = res.response.docs[i].section_name !== null ? `<p>${res.response.docs[i].section_name}</p>` : '';
 			var date = res.response.docs[i].pub_date !== null ? `<p>${res.response.docs[i].pub_date}</p>` : '';
-			var url = res.response.docs[i].web_url !== null ? `<a href="${res.response.docs[i].web_url}" target="_blank">${res.response.docs[i].web_url}</a>` : '';
+			var url = res.response.docs[i].web_url !== null ? `<a href="${res.response.docs[i].web_url}" target="_blank">View</a>` : '';
 
 			$('.article-body').append(
 
