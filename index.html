@@ -2,13 +2,12 @@
 <html>
 	<head>
 		<title>New York Times</title>
-		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+		<link rel="icon" href="assets/images/fav.png" type="image/ico" sizes="16x16">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link href="style.css" type="text/css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet">
 	</head>
 		<body>
-
 			<header>
 				<div class="jumbotron">
 					<div class="container">
@@ -20,48 +19,49 @@
 					</div>
 				</div>
 			</header>
-
-		<div class="container">
-			<div class="search">
-					<p><i class="fa fa-list" aria-hidden="true"></i> Search Parameters</p>
+			<div class="container search-wrap">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<p><i class="fa fa-list" aria-hidden="true"></i> Search Parameters</p>
+					</div>
+						<div class="panel-body">
+							<form>
+								<div class="form-group">
+									<label>Search Term</label>
+									<input id="name-input" type="" name="" class="form-control" placeholder="Roosevelt">
+								</div>
+								<div class="form-group">
+									<label>Number of articles</label>
+									<select class="form-control dropdown">
+										<option>1</option>
+										<option>5</option>
+										<option>10</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Start Year</label>
+									<input id="start-year"type="" name="" class="form-control" placeholder="Start Year">
+								</div>
+								<div class="form-group">
+									<label>End Year</label>
+									<input id="end-year" type="" name="" class="form-control" placeholder="End Year">
+								</div>
+									<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Submit</button>
+									<button class="btn clear-btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i> Clear Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
-			<form>
-				<div class="form-group">
-					<label>Search Term</label>
-					<input id="name-input" type="" name="" class="form-control" placeholder="Roosevelt">
-				</div>
-				<div class="form-group">
-					<label>Number of articles</label>
-					<select class="form-control">
-					  <option>1</option>
-					  <option>5</option>
-					  <option>10</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label>Start Year</label>
-					<input id="start-year"type="" name="" class="form-control" placeholder="Start Year">
-				</div>
-				<div class="form-group">
-					<label>End Year</label>
-					<input id="end-year" type="" name="" class="form-control" placeholder="End Year">
-				</div>
-				<button type="submit" class="btn search-btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i> Submit</button>
-				<button class="btn clear-btn btn-primary"><i class="fa fa-trash" aria-hidden="true"></i> Clear Search</button>
-				</div>
-			</form>
-		</div>
-
-
 		<div class="container article-wrap">
-			<div class="article">
-				<p><i class="fa fa-calendar" aria-hidden="true"></i> Top Articles</p>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<p><i class="fa fa-calendar" aria-hidden="true"></i> Top Articles</p>
+				</div>
+				<div class="panel-body article-body"></div>
 			</div>
 		</div>
-
-
-
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script type="text/javascript" src="script.js"></script>
-		</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</body>
 </html>

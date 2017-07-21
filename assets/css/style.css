@@ -1,0 +1,40 @@
+
+.search, .articles {
+	background: #b5b5b5;
+	border-radius: 5px;
+	position: relative;
+	height: 40px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+.article-wrap {
+	display: none;
+}
+
+.search-wrap {
+	margin-bottom: 2rem;
+}
+
+p {
+	margin: 0;
+}
+
+.article {
+	padding: 1rem;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+.article:nth-of-type(even) {
+	background: #e6e6e6;
+}
+
+.article:nth-of-type(odd) {
+	background: #f6f6f6;
+}
+
+.panel {
+	box-shadow: 0 2px 7px #666;
+}
