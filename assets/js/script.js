@@ -5,7 +5,7 @@ function api(e) {
 	$('.article-body').empty();
 	$('.article-wrap').css('display', 'block');
 
-	var name = $("#name-input").val() !== '' ? $("#name-input").val() : '';
+	var name = $("#name-input").val();
 	var startYear = $("#start-year").val() !== '' ? '&begin_date=' + $("#start-year").val() + '0101' : '';
 	var endYear = $("#end-year").val() !== '' ? '&end_date=' + $("#end-year").val() +'0101' : '';
 	var limit = $(".dropdown").val();
@@ -45,6 +45,10 @@ function api(e) {
 
 $(document).ready( function () {
 
-	$('.search-btn').click(api);
+	$('.search-btn').click( function (e) {
+
+		if ($("#name-input").val() !== '') api(e);
+
+	});
 
 });
